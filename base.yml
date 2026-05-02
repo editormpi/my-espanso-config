@@ -1,0 +1,21 @@
+matches:
+  # Autotext untuk Sapaan
+  - trigger: ";halo"
+    replace: "Halo kak, selamat datang di Zasha. Ada yang bisa kami bantu?"
+
+  # Autotext untuk Link Website
+  - trigger: ";web"
+    replace: "Silakan kunjungi website kami di https://zasha.online"
+
+  # Autotext untuk Belajar Git
+  - trigger: ";gitsave"
+    replace: "git add . && git commit -m 'update' && git push origin main"
+
+  # Tanggal otomatis
+  - trigger: ";tgl"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%d/%m/%Y"
